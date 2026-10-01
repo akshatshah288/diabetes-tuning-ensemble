@@ -1,0 +1,113 @@
+{
+  "seed": 42,
+  "test_fraction": 0.2,
+  "cv_folds": 5,
+  "input_sha256": "b78029447fae2743b3218bb2b76ef0d04afe8d7e55ce2faf4d1ec82d8f8ae8ac",
+  "preferred_by_cv": "Random Forest Ensemble",
+  "search_space": {
+    "model__criterion": [
+      "gini",
+      "entropy"
+    ],
+    "model__max_depth": [
+      3,
+      5,
+      7,
+      10,
+      null
+    ],
+    "model__min_samples_split": [
+      2,
+      5,
+      10
+    ],
+    "model__min_samples_leaf": [
+      1,
+      2,
+      5
+    ]
+  },
+  "randomized_n_iter": 30,
+  "grid_best_params": {
+    "model__criterion": "gini",
+    "model__max_depth": 3,
+    "model__min_samples_leaf": 1,
+    "model__min_samples_split": 2
+  },
+  "grid_best_score": 0.7443022790883647,
+  "randomized_best_params": {
+    "model__min_samples_split": 2,
+    "model__min_samples_leaf": 1,
+    "model__max_depth": 3,
+    "model__criterion": "gini"
+  },
+  "randomized_best_score": 0.7443022790883647,
+  "estimators": {
+    "Baseline Decision Tree": {
+      "ccp_alpha": 0.0,
+      "class_weight": null,
+      "criterion": "gini",
+      "max_depth": null,
+      "max_features": null,
+      "max_leaf_nodes": null,
+      "min_impurity_decrease": 0.0,
+      "min_samples_leaf": 1,
+      "min_samples_split": 2,
+      "min_weight_fraction_leaf": 0.0,
+      "monotonic_cst": null,
+      "random_state": 42,
+      "splitter": "best"
+    },
+    "Decision Tree - GridSearchCV": {
+      "ccp_alpha": 0.0,
+      "class_weight": null,
+      "criterion": "gini",
+      "max_depth": 3,
+      "max_features": null,
+      "max_leaf_nodes": null,
+      "min_impurity_decrease": 0.0,
+      "min_samples_leaf": 1,
+      "min_samples_split": 2,
+      "min_weight_fraction_leaf": 0.0,
+      "monotonic_cst": null,
+      "random_state": 42,
+      "splitter": "best"
+    },
+    "Decision Tree - RandomizedSearchCV": {
+      "ccp_alpha": 0.0,
+      "class_weight": null,
+      "criterion": "gini",
+      "max_depth": 3,
+      "max_features": null,
+      "max_leaf_nodes": null,
+      "min_impurity_decrease": 0.0,
+      "min_samples_leaf": 1,
+      "min_samples_split": 2,
+      "min_weight_fraction_leaf": 0.0,
+      "monotonic_cst": null,
+      "random_state": 42,
+      "splitter": "best"
+    },
+    "Random Forest Ensemble": {
+      "bootstrap": true,
+      "ccp_alpha": 0.0,
+      "class_weight": null,
+      "criterion": "gini",
+      "max_depth": null,
+      "max_features": "sqrt",
+      "max_leaf_nodes": null,
+      "max_samples": null,
+      "min_impurity_decrease": 0.0,
+      "min_samples_leaf": 2,
+      "min_samples_split": 2,
+      "min_weight_fraction_leaf": 0.0,
+      "monotonic_cst": null,
+      "n_estimators": 300,
+      "n_jobs": 1,
+      "oob_score": false,
+      "random_state": 42,
+      "verbose": 0,
+      "warm_start": false
+    }
+  }
+}

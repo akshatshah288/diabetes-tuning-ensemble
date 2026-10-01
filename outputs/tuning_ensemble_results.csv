@@ -1,0 +1,5 @@
+Model,CV Accuracy,Test Accuracy,Best Params
+Baseline Decision Tree,0.6726242836198855,0.6818181818181818,"Fixed, not tuned: criterion=gini, max_depth=None, min_samples_split=2, min_samples_leaf=1"
+Decision Tree - GridSearchCV,0.7443022790883647,0.6883116883116883,"{""criterion"": ""gini"", ""max_depth"": 3, ""min_samples_leaf"": 1, ""min_samples_split"": 2}"
+Decision Tree - RandomizedSearchCV,0.7443022790883647,0.6883116883116883,"{""min_samples_split"": 2, ""min_samples_leaf"": 1, ""max_depth"": 3, ""criterion"": ""gini""}"
+Random Forest Ensemble,0.7687325069972012,0.7467532467532467,"Fixed, not tuned: n_estimators=300, min_samples_leaf=2, max_features=sqrt, max_depth=None"
